@@ -1,0 +1,116 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3548,        108]
+NotebookOptionsPosition[      3116,         87]
+NotebookOutlinePosition[      3471,        103]
+CellTagsIndexPosition[      3428,        100]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"names", "=", 
+  RowBox[{"FileNames", "[", 
+   RowBox[{
+    RowBox[{"NotebookDirectory", "[", "]"}], "<>", "\"\</*.obj\>\""}], 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.683634041732583*^9, 3.6836340632400312`*^9}, {
+  3.683634559266309*^9, 3.6836345675253773`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"/Users/flip/Desktop/Peppers1/bp10.obj\"\>", 
+   ",", "\<\"/Users/flip/Desktop/Peppers1/bp11.obj\"\>", 
+   ",", "\<\"/Users/flip/Desktop/Peppers1/bp12.obj\"\>", 
+   ",", "\<\"/Users/flip/Desktop/Peppers1/bp1.obj\"\>", 
+   ",", "\<\"/Users/flip/Desktop/Peppers1/bp2.obj\"\>", 
+   ",", "\<\"/Users/flip/Desktop/Peppers1/bp3.obj\"\>", 
+   ",", "\<\"/Users/flip/Desktop/Peppers1/bp4.obj\"\>", 
+   ",", "\<\"/Users/flip/Desktop/Peppers1/bp5.obj\"\>", 
+   ",", "\<\"/Users/flip/Desktop/Peppers1/bp6.obj\"\>", 
+   ",", "\<\"/Users/flip/Desktop/Peppers1/bp7.obj\"\>", 
+   ",", "\<\"/Users/flip/Desktop/Peppers1/bp8.obj\"\>", 
+   ",", "\<\"/Users/flip/Desktop/Peppers1/bp9.obj\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{3.683634058943738*^9, 3.683634108690793*^9, 
+  3.6836345681224957`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"Export", "[", 
+    RowBox[{
+     RowBox[{"StringReplace", "[", 
+      RowBox[{"#", ",", 
+       RowBox[{"\"\<.obj\>\"", "\[Rule]", "\"\<.stl\>\""}]}], "]"}], ",", 
+     RowBox[{"RepairMesh", "[", 
+      RowBox[{"Import", "[", "#", "]"}], "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\"\<STL\>\"", ",", 
+       RowBox[{"\"\<BinaryFormat\>\"", "\[Rule]", "False"}], ",", 
+       RowBox[{"\"\<InvertNormals\>\"", "\[Rule]", "True"}]}], "}"}]}], "]"}],
+    "&"}], "/@", "names"}]], "Input",
+ CellChangeTimes->{{3.683634074100053*^9, 3.683634186247319*^9}, {
+  3.683634246379877*^9, 3.6836342579413023`*^9}, {3.683634372607071*^9, 
+  3.683634408429289*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"~/Desktop/Peppers1/bp10.stl\"\>", 
+   ",", "\<\"~/Desktop/Peppers1/bp11.stl\"\>", 
+   ",", "\<\"~/Desktop/Peppers1/bp12.stl\"\>", 
+   ",", "\<\"~/Desktop/Peppers1/bp1.stl\"\>", 
+   ",", "\<\"~/Desktop/Peppers1/bp2.stl\"\>", 
+   ",", "\<\"~/Desktop/Peppers1/bp3.stl\"\>", 
+   ",", "\<\"~/Desktop/Peppers1/bp4.stl\"\>", 
+   ",", "\<\"~/Desktop/Peppers1/bp5.stl\"\>", 
+   ",", "\<\"~/Desktop/Peppers1/bp6.stl\"\>", 
+   ",", "\<\"~/Desktop/Peppers1/bp7.stl\"\>", 
+   ",", "\<\"~/Desktop/Peppers1/bp8.stl\"\>", 
+   ",", "\<\"~/Desktop/Peppers1/bp9.stl\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{3.683634513068913*^9}]
+}, Open  ]]
+},
+WindowSize->{808, 751},
+WindowMargins->{{137, Automatic}, {Automatic, 11}},
+FrontEndVersion->"11.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (July 28, \
+2016)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 291, 7, 32, "Input"],
+Cell[874, 31, 827, 15, 172, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1738, 51, 701, 17, 54, "Input"],
+Cell[2442, 70, 658, 14, 96, "Output"]
+}, Open  ]]
+}
+]
+*)
+
